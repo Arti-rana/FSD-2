@@ -2,6 +2,14 @@
 
 This experiment focuses on implementing routing in a Single Page Application (SPA) using React and the react-router-dom package. The goal was to build a navigation system where different components are displayed based on the URL without page reloads.
 
+## Routing in SPA
+Rounting means changing pages in a website without reloading the whole page.
+In SPA ,There is only one HTML page, routing just swaps components.
+Like in this experiment : /   → shows Home component  
+/about   → shows About component  
+/contact → shows Profile component  
+
+
 ### Components Used from react-router-dom:
 
 - **BrowserRouter** - Wraps the entire application to enable routing functionality
