@@ -1,16 +1,51 @@
-# React + Vite
+# Implement Routing in SPA
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This experiment focuses on implementing routing in a Single Page Application (SPA) using React and the react-router-dom package. The goal was to build a navigation system where different components are displayed based on the URL without page reloads.
 
-Currently, two official plugins are available:
+### Components Used from react-router-dom:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **BrowserRouter** - Wraps the entire application to enable routing functionality
+- **Routes** - Container that matches the URL to the correct route
+- **Route** - Defines individual routes and their corresponding components
+- **Link** - Creates navigation links between different routes without full page refreshes
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Installation and Running
 
-## Expanding the ESLint configuration
+### Install Dependencies:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+```
+
+### Run Development Server:
+
+```bash
+npm run dev
+```
+
+The application will run on http://localhost:5173
+
+### Build for Production:
+
+```bash
+npm run build
+```
+
+This creates an optimized dist folder ready for deployment.
+
+### Preview Production Build:
+
+```bash
+npm run preview
+```
+
+## Learning Outcomes
+
+1. How to implement client-side routing using BrowserRouter, Routes, and Route components
+2. How to create navigation links without page reloads using the Link component
+3. How to organize components in a Single Page Application structure
+4. How to build and deploy React applications using Vite and Netlify
+5. How to use Git and GitHub for version control
+6. Understanding of npm scripts and development tools
