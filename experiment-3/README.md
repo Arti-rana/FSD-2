@@ -56,4 +56,3 @@ npm run preview
 3. How to organize components in a Single Page Application structure
 4. How to build and deploy React applications using Vite and Netlify
 5. How to use Git and GitHub for version control
-6. Understanding of npm scripts and development tools
