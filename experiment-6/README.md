@@ -1,16 +1,31 @@
-# React + Vite
+# Experiment 6 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Aim
+To handle form inputs and perform basic validation in a React frontend application.
 
-Currently, two official plugins are available:
+## Description
+In this experiment, a registration form was created using React. The form collects user information such as username, email, and password. A checkbox for accepting terms and conditions was also included. Form data is handled using React state and validated before submission.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Form Components
+- Username input field  
+- Email input field  
+- Password input field  
+- Accept Terms & Conditions checkbox  
+- Register button  
 
-## React Compiler
+## Tools & Technologies
+- React  
+- Vite  
+- JavaScript  
+- CSS  
+- VS Code  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Output
+- Registration form displayed on the screen  
+- User can enter data in all input fields  
+- Validation applied before form submission  
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Learning Outcome
+- Learned form handling in React  
+- Understood basic frontend validation  
+- Learned to manage input and checkbox states  
