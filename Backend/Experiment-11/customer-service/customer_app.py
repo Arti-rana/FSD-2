@@ -4,8 +4,8 @@ import os
 
 app = Flask(__name__)
 
-# IMPORTANT: local testing
-ORDER_SERVICE_URL = "http://localhost:5002"
+# USE DEPLOYED ORDER SERVICE URL
+ORDER_SERVICE_URL = "https://two3bda70124-ex-11-order-service.onrender.com"
 
 customers = {
     101: {"id": 101, "name": "Customer-1", "email": "customer-1@example.com"},
@@ -35,4 +35,7 @@ def get_customer_orders(user_id):
     })
 
 if __name__ == "__main__":
-    app.run(port=5001)
+    app.run(
+        host="0.0.0.0",
+        port=int(os.environ.get("PORT", 5001))
+    )

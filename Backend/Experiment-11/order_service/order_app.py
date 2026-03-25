@@ -1,4 +1,5 @@
 from flask import Flask, jsonify, request
+import os
 
 app = Flask(__name__)
 
@@ -30,4 +31,7 @@ def update_order_status(order_id):
     return jsonify({"error": "Order not found"}), 404
 
 if __name__ == "__main__":
-    app.run(port=5002)
+    app.run(
+        host="0.0.0.0",
+        port=int(os.environ.get("PORT", 5002))
+    )
