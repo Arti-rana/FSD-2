@@ -2,6 +2,7 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
+
 from flask import Flask, request, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from marshmallow import Schema, fields, validate, ValidationError
@@ -10,13 +11,15 @@ import pymysql
 pymysql.install_as_MySQLdb()
 
 app = Flask(__name__)
+
+# Load environment variables
 DB_USER = os.getenv("DB_USER")
 DB_PASSWORD = os.getenv("DB_PASSWORD")
 DB_HOST = os.getenv("DB_HOST")
 DB_NAME = os.getenv("DB_NAME")
 DB_PORT = os.getenv("DB_PORT")
 
-# Update MySQL credentials below
+# Database configuration (Aiven MySQL)
 app.config['SQLALCHEMY_DATABASE_URI'] = (
     f"mysql+pymysql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
     "?ssl_ca=ca.pem"
@@ -116,14 +119,16 @@ def delete_student(id):
     db.session.commit()
     return jsonify({"message": "Student deleted successfully"})
 
+# ===============================
+# Home Route
+# ===============================
 @app.route('/')
 def home():
     return jsonify({"message": "Flask MySQL Students CRUD API with Validation Running"})
 
-import os
-
+# ===============================
+# Run App (Render Compatible)
+# ===============================
 if __name__ == '__main__':
-    with app.app_context():
-        db.create_all()
     port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port)
