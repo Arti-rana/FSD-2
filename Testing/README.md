@@ -1,7 +1,4 @@
 # Testing Suite
-
-This folder contains the testing setup for the FSD2 project, demonstrating full-stack testing with CI/CD integration.
-
 ## Structure
 
 - `experiment-6/`: Frontend testing with React and Vitest
@@ -50,8 +47,10 @@ Frontend tests are prepared but commented out in the CI config. Uncomment the `f
 5. Ensured dependencies are properly managed
 
 The CI ensures code quality by running tests on every change.
+<img width="1906" height="1019" alt="Screenshot 2026-04-17 125311" src="https://github.com/user-attachments/assets/8eb3f6f1-c7a5-490b-93a5-6cef69c20b24" />
+<img width="1904" height="819" alt="Screenshot 2026-04-17 125443" src="https://github.com/user-attachments/assets/c0c75060-6205-4188-b7a3-579e2410ca9d" />
+<img width="1919" height="1016" alt="Screenshot 2026-04-17 134519" src="https://github.com/user-attachments/assets/aedbc996-65f9-4632-b2ca-c24b169513c9" />
+<img width="927" height="817" alt="Screenshot 2026-04-17 215215" src="https://github.com/user-attachments/assets/472441bf-50ac-47c4-a7da-586f0c80c067" />
 
-![alt text](<Screenshot 2026-04-17 215215.png>)
- ![text](<Screenshot 2026-04-17 125443.png>) 
- ![text](<Screenshot 2026-04-17 134519.png>) 
- ![text](<Screenshot 2026-04-17 125311.png>)
+
+
